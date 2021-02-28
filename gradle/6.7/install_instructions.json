@@ -1,0 +1,12 @@
+{
+	"downloads": [
+		{
+			"url": "https://services.gradle.org/distributions/gradle-6.7-bin.zip",
+			"destination_directory": "6.7"
+		}
+	],
+	"environment_variables": [
+		{"name": "GRADLE_HOME", "relative_path": "6.7/gradle-6.7"},
+		{"name": "PATH", "relative_path": "6.7/gradle-6.7/bin"}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"downloads": [
+		{
+			"url": "https://golang.org/dl/go1.16.linux-amd64.tar.gz",
+			"destination_directory": "1.16",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://golang.org/dl/go1.16.windows-amd64.zip",
+			"destination_directory": "1.16",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://golang.org/dl/go1.16.darwin-amd64.tar.gz",
+			"destination_directory": "1.16",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "1.16/go/bin"}
+	]
+}

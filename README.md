@@ -8,9 +8,9 @@ This github contains all of the install json files that tell solipath how to ins
 The folders at the root of this repository represent the tool itself, folders underneath that level represent the versions that have been created so far.
 
 ## Components
-Solipath (To be added soon)
-Solipath Install Instructions <--- you are here
-Solipath Shell Scripts (Being worked on)
+- Solipath https://github.com/Solipath/Solipath
+- Solipath Install Instructions <--- you are here
+- Solipath Shell Scripts (Being worked on)
 
 
 ## Usage

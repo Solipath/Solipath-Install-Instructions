@@ -2,8 +2,8 @@
     "templates": [
         {"name": "template1", "variables": {
             "version": "11.0.10+9",
-			"urlVersion": "jdk-11.0.10%2B9",
-            "urlVersion2": "11.0.9.1_1",
+			"innerFilePath": "jdk-11.0.10+9",
+            "urlVersion": "11.0.9.1_1",
             "openJdk": "openjdk11",
             "openJdkCaps": "OpenJDK11U"
         }}

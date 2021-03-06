@@ -1,0 +1,25 @@
+{
+	"downloads": [
+		{
+			"url": "https://github.com/AdoptOpenJDK/${openJdk}-binaries/releases/download/${urlVersion}/${openJdkCaps}-jdk_x64_linux_hotspot_${urlVersion2}.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://github.com/AdoptOpenJDK/${openJdk}-binaries/releases/download/${urlVersion}/${openJdkCaps}-jdk_x64_windows_hotspot_${urlVersion2}.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        },
+		{
+            "url": "https://github.com/AdoptOpenJDK/${openJdk}-binaries/releases/download/${urlVersion}/${openJdkCaps}-jdk_x64_mac_hotspot_${urlVersion2}.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+        }
+	],
+	"environment_variables": [
+		{"name": "JAVA_HOME", "relative_path": "${version}/jdk-${version}", "platform_filters": [{"os": "linux"}, {"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/jdk-${version}/bin", "platform_filters": [{"os": "linux"}, {"os": "windows"}]},
+		{"name": "JAVA_HOME", "relative_path": "${version}/jdk-${version}/Contents/Home", "platform_filters": [{"os": "macos"}]},
+		{"name": "PATH", "relative_path": "${version}/jdk-${version}/Contents/Home/bin", "platform_filters": [{"os": "macos"}]}
+	]
+}

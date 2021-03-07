@@ -1,0 +1,24 @@
+{
+	"downloads": [
+		{
+			"url": "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64",
+			"destination_directory": "latest",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-archive",
+			"destination_directory": "latest",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://code.visualstudio.com/sha/download?build=stable&os=darwin",
+			"destination_directory": "latest",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "latest/VSCode-linux-x64/bin", "platform_filters": [{"os": "linux", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "latest/bin", "platform_filters": [{"os": "windows", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "latest/Visual Studio Code.app/Contents/Resources/app/bin", "platform_filters": [{"os": "macos", "arch": "x86_64"}]}
+	]
+}

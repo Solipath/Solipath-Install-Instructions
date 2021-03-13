@@ -1,0 +1,22 @@
+{
+	"downloads": [
+		{
+			"url": "https://download.visualstudio.microsoft.com/download/pr/73a9cb2a-1acd-4d20-b864-d12797ca3d40/075dbe1dc3bba4aa85ca420167b861b6/dotnet-sdk-5.0.201-linux-x64.tar.gz",
+			"destination_directory": "5.0.201",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.visualstudio.microsoft.com/download/pr/989b7ad4-bdce-4c40-a323-7e348578867a/cb7c44c6b2a68063be8e991e8fe8a13d/dotnet-sdk-5.0.201-win-x64.zip",
+			"destination_directory": "5.0.201",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://download.visualstudio.microsoft.com/download/pr/b660bd50-30b1-4a69-ad8d-d83209ea6213/4fb0163b7fff707f204a100c24d82ef6/dotnet-sdk-5.0.201-osx-x64.tar.gz",
+			"destination_directory": "5.0.201",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "5.0.201"}
+	]
+}

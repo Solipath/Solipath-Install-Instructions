@@ -17,7 +17,7 @@ get_download_verifier_for_each_operating_system(){
 }
 
 if [ ! -f ~/solipath/download_verifier ]; then
-	curl -L "$(get_download_verifier_for_each_operating_system)" -o ~/solipath/download_verifier
+	curl --create-dirs --url  "$(get_download_verifier_for_each_operating_system)" -o ~/solipath/download_verifier
 	chmod +x ~/solipath/download_verifier
 fi
 ~/solipath/download_verifier "$@"

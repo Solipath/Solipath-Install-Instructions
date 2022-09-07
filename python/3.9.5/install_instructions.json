@@ -1,7 +1,10 @@
 {
     "templates": [
         {"name": "template1", "variables": {
-            "version": "3.9.5"
+            "version": "3.9.5",
+            "winPythonVersion": "3.9.5.0",
+            "versionNoPeriods": "3950",
+            "formattedReleaseDate":"4.3.20210620"
         }}
     ]
 }

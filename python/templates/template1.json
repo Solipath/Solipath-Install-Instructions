@@ -6,13 +6,15 @@
             "platform_filters": [{"os": "linux"}, {"os": "macos"}]
 		},
         {
-            "url": "https://www.python.org/ftp/python/${version}/python-${version}-amd64.exe",
+            "url": "https://github.com/winpython/winpython/releases/download/${formattedReleaseDate}/Winpython64-${winPythonVersion}dot.exe",
             "destination_directory": "${version}",
             "platform_filters": [{"os": "windows", "arch": "x86_64"}]
         }
 	],
 	"environment_variables": [
-		{"name": "PATH", "relative_path": "${version}/Python-${version}"}
+		{"name": "PATH", "relative_path": "${version}/Python-${version}", "platform_filters": [{"os": "linux"},{"os": "macos"}]},
+		{"name": "PATH", "relative_path": "${version}/WPy64-${versionNoPeriods}/python-${version}.amd64", "platform_filters": [{"os": "windows"}]},
+        {"name": "PATH", "relative_path": "${version}/WPy64-${versionNoPeriods}/python-${version}.amd64/Scripts", "platform_filters": [{"os": "windows"}]}
 	],
     "install_commands": [
         {
@@ -21,9 +23,9 @@
             "platform_filters": [{"os": "linux"}, {"os": "macos"}]
         },
         {
-            "command": "cd ${version}/python-${version}-amd64.exe /quiet TargetDir=python Include_lib Include_tools Include_pip",
-        	"when_to_run_rules": {"file_does_not_exist": "${version}/Python-${version}/python"},
-            "platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        	"command": "cd ${version} && start /b /wait Winpython64-${winPythonVersion}dot.exe -y",
+        	"when_to_run_rules": {"file_does_not_exist": "${version}/WPy64-${versionNoPeriods}"},
+            "platform_filters": [{"os": "windows"}]
         }
     ]
 }

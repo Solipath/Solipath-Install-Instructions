@@ -9,8 +9,8 @@
 			"url": "https://cache.ruby-lang.org/pub/ruby/3.0/ruby-3.0.2.tar.gz",
 			"destination_directory": "3.0.2",
 			"platform_filters": [
-				{"os": "mac", "arch": "x86_64"},
-				{"os": "linux", "arch": "x86_64"}
+				{"os": "macos"},
+				{"os": "linux"}
 			]
     		}
 	],
@@ -24,8 +24,8 @@
 			"name": "PATH", 
 			"relative_path": "3.0.2/ruby/bin", 
 			"platform_filters": [
-				{"os": "mac", "arch": "x86_64"},
-				{"os": "linux", "arch": "x86_64"}
+				{"os": "macos"},
+				{"os": "linux"}
 			]
 		}
 	],
@@ -34,8 +34,8 @@
 			"command": "cd 3.0.2/ruby-3.0.2 && ./configure --prefix=\"${PWD}/../ruby\" && make && make install",
 			"when_to_run_rules": {"file_does_not_exist": "3.0.2/ruby"},
 			"platform_filters": [
-				{"os": "mac", "arch": "x86_64"},
-				{"os": "linux", "arch": "x86_64"}
+				{"os": "macos"},
+				{"os": "linux"}
 			]
 		}
 	]

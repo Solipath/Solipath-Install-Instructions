@@ -20,12 +20,17 @@
         {
         	"command": "cd ${version}/Python-${version} && ./configure --enable-optimizations && make",
         	"when_to_run_rules": {"file_does_not_exist": "${version}/Python-${version}/python"},
-            "platform_filters": [{"os": "linux"}, {"os": "macos"}]
+            "platform_filters": [{"os": "linux"}]
+        },
+        {
+        	"command": "cd ${version}/Python-${version} && ./configure --enable-optimizations && make",
+        	"when_to_run_rules": {"file_does_not_exist": "${version}/Python-${version}/python.exe"},
+            "platform_filters": [{"os": "macos"}]
         },
         {
         	"command": "cd ${version} && start /b /wait Winpython64-${winPythonVersion}dot.exe -y",
         	"when_to_run_rules": {"file_does_not_exist": "${version}/WPy64-${versionNoPeriods}"},
-            "platform_filters": [{"os": "windows"}]
+            "platform_filters": [{"os": "windows", "arch": "x86_64"}]
         }
     ]
 }

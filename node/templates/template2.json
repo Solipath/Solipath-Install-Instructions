@@ -21,7 +21,7 @@
 			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
 		},
 		{
-			"url": "https://nodejs.org/dist/v${version}/node-v${version}-darwin-x64.tar.gz",
+			"url": "https://nodejs.org/dist/v${version}/node-v${version}-darwin-arm64.tar.gz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
 		}
@@ -31,6 +31,6 @@
 		{"name": "PATH", "relative_path": "${version}/node-v${version}-linux-arm64/bin", "platform_filters": [{"os": "linux", "arch": "aarch64"}]},
 		{"name": "PATH", "relative_path": "${version}/node-v${version}-win-x64", "platform_filters": [{"os": "windows", "arch": "x86_64"}]},
 		{"name": "PATH", "relative_path": "${version}/node-v${version}-darwin-x64/bin", "platform_filters": [{"os": "macos", "arch": "x86_64"}]},
-		{"name": "PATH", "relative_path": "${version}/node-v${version}-darwin-x64/bin", "platform_filters": [{"os": "macos", "arch": "aarch64"}]}
+		{"name": "PATH", "relative_path": "${version}/node-v${version}-darwin-arm64/bin", "platform_filters": [{"os": "macos", "arch": "aarch64"}]}
 	]
 }

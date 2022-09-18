@@ -1,0 +1,7 @@
+{
+    "templates": [
+        {"name": "template2", "variables": {
+            "version": "16.17.0"
+        }}
+    ]
+}

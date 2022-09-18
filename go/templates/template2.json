@@ -16,7 +16,7 @@
 			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
 		},
 		{
-			"url": "https://golang.org/dl/go${version}.darwin-amd64.tar.gz",
+			"url": "https://golang.org/dl/go${version}.darwin-arm64.tar.gz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
 		},

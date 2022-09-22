@@ -1,0 +1,42 @@
+{
+	"downloads": [
+		{
+			"url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-${version}-1/rubyinstaller-${version}-1-x64.7z",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    		},
+		{
+			"url": "https://cache.ruby-lang.org/pub/ruby/${shortVersion}/ruby-${version}.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [
+				{"os": "macos"},
+				{"os": "linux"}
+			]
+    		}
+	],
+	"environment_variables": [
+		{
+			"name": "PATH", 
+			"relative_path": "${version}/rubyinstaller-${version}-1-x64/bin", 
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+		},
+		{
+			"name": "PATH", 
+			"relative_path": "${version}/ruby/bin", 
+			"platform_filters": [
+				{"os": "macos"},
+				{"os": "linux"}
+			]
+		}
+	],
+	"install_commands": [
+		{
+			"command": "cd ${version}/ruby-${version} && ./configure --prefix=\"${PWD}/../ruby\" && make && make install",
+			"when_to_run_rules": {"file_does_not_exist": "${version}/ruby"},
+			"platform_filters": [
+				{"os": "macos"},
+				{"os": "linux"}
+			]
+		}
+	]
+}

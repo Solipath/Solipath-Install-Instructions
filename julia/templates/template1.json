@@ -1,0 +1,32 @@
+{
+	"downloads": [
+		{
+			"url": "https://julialang-s3.julialang.org/bin/linux/x64/${shortVersion}/julia-${version}-linux-x86_64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://julialang-s3.julialang.org/bin/linux/aarch64/${shortVersion}/julia-${version}-linux-aarch64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://julialang-s3.julialang.org/bin/winnt/x64/${shortVersion}/julia-${version}-win64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://julialang-s3.julialang.org/bin/mac/x64/${shortVersion}/julia-${version}-mac64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://julialang-s3.julialang.org/bin/mac/aarch64/${shortVersion}/julia-${version}-macaarch64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/julia-${version}/bin"}
+	]
+}

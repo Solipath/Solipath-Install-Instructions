@@ -3,7 +3,7 @@
 get_download_verifier_for_each_operating_system(){
 	local uname_s_output=$(uname -s)
 	case "$uname_s_output" in
-		Linux*) local operating_system="https://github.com/Solipath/Solipath/releases/download/latest-ubuntu_x86_64/download_verifier"
+		Linux*) local operating_system="https://github.com/Solipath/Solipath/releases/download/latest-linux_x86_64/download_verifier"
 			;;
 		Darwin*) local operating_system="https://github.com/Solipath/Solipath/releases/download/latest-macos_x86_64/download_verifier"
 			;;

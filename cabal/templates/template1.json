@@ -1,7 +1,7 @@
 {
 	"downloads": [
 		{
-			"url": "https://downloads.haskell.org/~cabal/cabal-install-${version}/cabal-install-${version}-x86_64-linux-alpine.tar.xz",
+			"url": "https://downloads.haskell.org/~cabal/cabal-install-${version}/cabal-install-${version}-x86_64-linux-deb10.tar.xz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
 		},

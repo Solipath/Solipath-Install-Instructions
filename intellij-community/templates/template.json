@@ -1,0 +1,18 @@
+{
+	"downloads": [
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIC-2022.2.3.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux"},{"os": "macos"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}.win.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        }
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/idea-IC-${buildNumber}/bin", "platform_filters": [{"os": "linux"},{"os": "macos"}]},
+		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]}
+	]
+}

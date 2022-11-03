@@ -25,7 +25,13 @@
 	"install_commands": [
 		{
 			"command": "cd android && mv cmdline-tools tools && mkdir cmdline-tools && mv tools cmdline-tools/tools",
-			"when_to_run_rules": {"file_does_not_exist": "android/cmdline-tools/tools"}
+			"when_to_run_rules": {"file_does_not_exist": "android/cmdline-tools/tools"},
+			"platform_filters": [{"os": "linux"},{"os": "macos"}]
+		},
+		{
+			"command": "cd android && move cmdline-tools tools && mkdir cmdline-tools && move tools cmdline-tools/tools",
+			"when_to_run_rules": {"file_does_not_exist": "android/cmdline-tools/tools"},
+			"platform_filters": [{"os": "windows"}]
 		}
 	]
 }

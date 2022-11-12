@@ -18,6 +18,7 @@
 	],
 	"environment_variables": [
 		{"name": "ANDROID_HOME", "relative_path": "android"},
+		{"name": "ANDROID_SDK_ROOT", "relative_path": "android"},
 		{"name": "PATH", "relative_path": "android/cmdline-tools/tools/bin"},
 		{"name": "PATH", "relative_path": "android/emulator"},
 		{"name": "PATH", "relative_path": "android/platform-tools"}

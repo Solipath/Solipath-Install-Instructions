@@ -1,9 +1,9 @@
 [
  ("GCC extra via C opts","")
  ,("C compiler command","gcc")
- ,("C compiler flags"," ")
+ ,("C compiler flags","-pthread ")
  ,("C++ compiler command","g++")
- ,("C++ compiler flags"," ")
+ ,("C++ compiler flags","-pthread ")
  ,("C compiler link flags","-fuse-ld=gold")
  ,("C compiler supports -no-pie","YES")
  ,("Use inplace MinGW toolchain","NO")

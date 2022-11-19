@@ -10,7 +10,7 @@
  ,("Haskell CPP command","gcc")
  ,("Haskell CPP flags","-E -undef -traditional")
  ,("ld command","ld.gold")
- ,("ld flags"," ")
+ ,("ld flags","-pthread")
  ,("ld supports compact unwind","NO")
  ,("ld supports build-id","YES")
  ,("ld supports filelist","NO")

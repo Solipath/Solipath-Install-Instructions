@@ -1,0 +1,58 @@
+{
+	"downloads": [
+		{
+			"url": "https://downloads.python.org/pypy/pypy${pythonVersion}-v${pypyVersion}-linux64.tar.bz2",
+			"destination_directory": "${pythonVersion}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://downloads.python.org/pypy/pypy${pythonVersion}-v${pypyVersion}-aarch64.tar.bz2",
+			"destination_directory": "${pythonVersion}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://downloads.python.org/pypy/pypy${pythonVersion}-v${pypyVersion}-win64.zip",
+			"destination_directory": "${pythonVersion}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://downloads.python.org/pypy/pypy${pythonVersion}-v${pypyVersion}-macos_x86_64.tar.bz2",
+			"destination_directory": "${pythonVersion}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://downloads.python.org/pypy/pypy${pythonVersion}-v${pypyVersion}-macos_arm64.tar.bz2",
+			"destination_directory": "${pythonVersion}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-linux64/bin", "platform_filters": [{"os": "linux", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-aarch64/bin", "platform_filters": [{"os": "linux", "arch": "aarch64"}]},
+		{"name": "PATH", "relative_path": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-win64", "platform_filters": [{"os": "windows", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-macos_x86_64/bin", "platform_filters": [{"os": "macos", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-macos_arm64/bin", "platform_filters": [{"os": "macos", "arch": "aarch64"}]}
+	],
+	"install_commands": [
+		{
+			"command": "pypy -m ensurepip", "when_to_run_rules": {"file_does_not_exist": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-linux64/bin/pip3"}, 
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"command": "pypy -m ensurepip", "when_to_run_rules": {"file_does_not_exist": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-aarch64/bin/pip3"}, 
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			"command": "pypy -m ensurepip", "when_to_run_rules": {"file_does_not_exist": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-win64/pip3"}, 
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+		},
+		{
+			"command": "pypy -m ensurepip", "when_to_run_rules": {"file_does_not_exist": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-macos_x86_64/bin/pip3"}, 
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"command": "pypy -m ensurepip", "when_to_run_rules": {"file_does_not_exist": "${pythonVersion}/pypy${pythonVersion}-v${pypyVersion}-macos_arm64/bin/pip3"}, 
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		}
+	]
+}

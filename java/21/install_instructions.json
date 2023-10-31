@@ -1,0 +1,12 @@
+{
+    "templates": [
+        {"name": "template2", "variables": {
+            "version": "21.0.1+12",
+            "versionGrouping": "temurin21",
+			"innerFilePath": "jdk-21.0.1+12",
+            "urlVersion": "21.0.1_12",
+            "openJdk": "openjdk21",
+            "openJdkCaps": "OpenJDK21U"
+        }}
+    ]
+}

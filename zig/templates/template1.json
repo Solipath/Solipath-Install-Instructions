@@ -1,27 +1,27 @@
 {
 	"downloads": [
 		{
-			"url": "https://ziglang.org/download/0.9.1/zig-linux-x86_64-${version}.tar.xz",
+			"url": "https://ziglang.org/download/${version}/zig-linux-x86_64-${version}.tar.xz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
 		},
 		{
-			"url": "https://ziglang.org/download/0.9.1/zig-linux-aarch64-${version}.tar.xz",
+			"url": "https://ziglang.org/download/${version}/zig-linux-aarch64-${version}.tar.xz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
 		},
 		{
-			"url": "https://ziglang.org/download/0.9.1/zig-windows-x86_64-${version}.zip",
+			"url": "https://ziglang.org/download/${version}/zig-windows-x86_64-${version}.zip",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
 		},
 		{
-			"url": "https://ziglang.org/download/0.9.1/zig-macos-x86_64-${version}.tar.xz",
+			"url": "https://ziglang.org/download/${version}/zig-macos-x86_64-${version}.tar.xz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
 		},
 		{
-			"url": "https://ziglang.org/download/0.9.1/zig-macos-aarch64-${version}.tar.xz",
+			"url": "https://ziglang.org/download/${version}/zig-macos-aarch64-${version}.tar.xz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
 		}

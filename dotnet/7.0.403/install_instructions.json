@@ -1,0 +1,60 @@
+{
+    "downloads": [
+        {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/558bb19a-c08f-4aa4-bcbc-481e9b050031/4de7724688881c9ce6f0e5cfb8a2acb6/dotnet-sdk-7.0.403-linux-arm64.tar.gz",
+            "destination_directory": "7.0.403",
+            "platform_filters": [
+                {
+                    "os": "linux",
+                    "arch": "aarch64"
+                }
+            ]
+        },
+        {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/ff8c660f-ffa9-4814-ac2d-4089e6ec4eb5/dc806d344844f1d58d8015d105e85c65/dotnet-sdk-7.0.403-linux-x64.tar.gz",
+            "destination_directory": "7.0.403",
+            "platform_filters": [
+                {
+                    "os": "linux",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/ac1ec933-8265-46e4-b725-5843d483aba9/f41605b8581d114a5131f7761f703a20/dotnet-sdk-7.0.403-osx-arm64.tar.gz",
+            "destination_directory": "7.0.403",
+            "platform_filters": [
+                {
+                    "os": "macos",
+                    "arch": "aarch64"
+                }
+            ]
+        },
+        {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/ff4be5da-8947-4b41-ad0d-84c98bc6d36d/4a20953b6b2aaa5ffd0f0a37e723698b/dotnet-sdk-7.0.403-osx-x64.tar.gz",
+            "destination_directory": "7.0.403",
+            "platform_filters": [
+                {
+                    "os": "macos",
+                    "arch": "x86_64"
+                }
+            ]
+        },
+        {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/81514d64-25fd-46ec-a0d1-648ca8b81d4e/b5416848b9ef1ffe5a3e323c62dc859d/dotnet-sdk-7.0.403-win-x64.zip",
+            "destination_directory": "7.0.403",
+            "platform_filters": [
+                {
+                    "os": "windows",
+                    "arch": "x86_64"
+                }
+            ]
+        }
+    ],
+    "environment_variables": [
+        {
+            "name": "PATH",
+            "relative_path": "7.0.403"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+	"downloads": [
+		{
+			"url": "https://github.com/sbt/sbt/releases/download/v${version}/sbt-${version}.zip",
+			"destination_directory": "${version}"
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/sbt/bin"}
+	]
+}

@@ -1,7 +1,7 @@
 {
 	"downloads": [
 		{
-			"url": "https://download.jetbrains.com/idea/ideaIC-2022.2.3.tar.gz",
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}.tar.gz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "linux"},{"os": "macos"}]
 		},

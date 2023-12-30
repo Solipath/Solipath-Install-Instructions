@@ -19,6 +19,11 @@
 			"url": "https://github.com/Solipath/compile-ruby/releases/download/${version}-linux_x86_64/ruby.tar.gz",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+    	},
+	{
+			"url": "https://github.com/Solipath/compile-ruby/releases/download/${version}-linux_aarch64/ruby.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
     	}
 	],
 	"environment_variables": [

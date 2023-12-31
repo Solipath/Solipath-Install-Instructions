@@ -41,6 +41,14 @@
 			]
 		},
 		{
+			"name": "CPATH",
+			"relative_path": "${version}/bin/include:$CPATH",
+			"platform_filters": [
+				{"os": "macos"},
+				{"os": "linux"}
+			]
+		},
+		{
 			"name": "BASERUBY", 
 			"relative_path": "${version}/bin/bin/ruby", 
 			"platform_filters": [

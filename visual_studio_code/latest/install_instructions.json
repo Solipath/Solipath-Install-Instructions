@@ -23,7 +23,7 @@
 		{
 			"url": "https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64",
 			"destination_directory": "latest",
-			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
 		}
 	],
 	"environment_variables": [

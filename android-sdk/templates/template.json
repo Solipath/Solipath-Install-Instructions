@@ -1,0 +1,38 @@
+{
+	"downloads": [
+		{
+			"url": "https://dl.google.com/android/repository/commandlinetools-linux-${version}_latest.zip",
+			"destination_directory": "android",
+			"platform_filters": [{"os": "linux"}]
+		},
+		{
+			"url": "https://dl.google.com/android/repository/commandlinetools-win-${version}_latest.zip",
+			"destination_directory": "android",
+			"platform_filters": [{"os": "windows"}]
+		},
+		{
+			"url": "https://dl.google.com/android/repository/commandlinetools-mac-${version}_latest.zip",
+			"destination_directory": "android",
+			"platform_filters": [{"os": "macos"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "ANDROID_HOME", "relative_path": "android"},
+		{"name": "ANDROID_SDK_ROOT", "relative_path": "android"},
+		{"name": "PATH", "relative_path": "android/cmdline-tools/tools/bin"},
+		{"name": "PATH", "relative_path": "android/emulator"},
+		{"name": "PATH", "relative_path": "android/platform-tools"}
+	],
+	"install_commands": [
+		{
+			"command": "cd android && mv cmdline-tools tools && mkdir cmdline-tools && mv tools cmdline-tools/tools",
+			"when_to_run_rules": {"file_does_not_exist": "android/cmdline-tools/tools"},
+			"platform_filters": [{"os": "linux"},{"os": "macos"}]
+		},
+		{
+			"command": "cd android && move cmdline-tools tools && mkdir cmdline-tools && move tools cmdline-tools/tools",
+			"when_to_run_rules": {"file_does_not_exist": "android/cmdline-tools/tools"},
+			"platform_filters": [{"os": "windows"}]
+		}
+	]
+}

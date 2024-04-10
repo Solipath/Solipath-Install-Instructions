@@ -8,5 +8,11 @@
 	"environment_variables": [
 		{"name": "GRADLE_HOME", "relative_path": "${version}/gradle-${version}"},
 		{"name": "PATH", "relative_path": "${version}/gradle-${version}/bin"}
+	],
+	"install_commands": [
+		{
+			"command": "chmod +x ${version}/gradle-${version}/bin/gradle",
+			"platform_filters": [{"os": "linux"},{"os": "macos"}]
+		}
 	]
 }

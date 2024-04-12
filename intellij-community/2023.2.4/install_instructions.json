@@ -1,8 +1,0 @@
-{
-    "templates": [
-        {"name": "template", "variables": {
-            "version": "2023.2.4",
-            "buildNumber": "232.10203.10"
-        }}
-    ]
-}

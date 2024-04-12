@@ -2,9 +2,9 @@ name: Check Java Builds Work
 on:
   push:
     branches: [ main ]
-    paths:
-      - java/**
-      - gradle/**
+    # paths:
+    #   - java/**
+    #   - gradle/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

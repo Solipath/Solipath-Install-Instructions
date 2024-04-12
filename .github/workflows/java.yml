@@ -1,4 +1,4 @@
-name: CI
+name: Check Java Builds Work
 on:
   push:
     branches: [ main ]
@@ -19,8 +19,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: check java build still works
-        run: |
-          curl -X POST 'https://api.github.com/repos/Solipath/Java-Gradle-Solipath-Example/actions/workflows/_build.yml' \
-          -H 'Accept: application/vnd.github.everest-preview+json' \
-          -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
-          -d '{"ref":${{matrix.version}}}'
+      run: |
+        curl -X POST 'https://api.github.com/repos/Solipath/Java-Gradle-Solipath-Example/actions/workflows/_build.yml' \
+        -H 'Accept: application/vnd.github.everest-preview+json' \
+        -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
+        -d '{"ref":${{matrix.version}}}'

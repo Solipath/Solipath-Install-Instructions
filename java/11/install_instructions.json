@@ -1,12 +1,1 @@
-{
-    "templates": [
-        {"name": "template2", "variables": {
-            "version": "11.0.16.1+1",
-            "versionGrouping": "temurin11",
-			"innerFilePath": "jdk-11.0.16.1+1",
-            "urlVersion": "11.0.16.1_1",
-            "openJdk": "openjdk11",
-            "openJdkCaps": "OpenJDK11U"
-        }}
-    ]
-}
+{"templates":[{"name":"template2","variables":{"version":"11.0.22+7","versionGrouping":"temurin11","innerFilePath":"jdk-11.0.22+7","urlVersion":"11.0.22_7","openJdk":"openjdk11","openJdkCaps":"OpenJDK11U"}}]}

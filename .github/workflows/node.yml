@@ -1,10 +1,9 @@
-name: Check Java Builds Work
+name: Check Node Builds Work
 on:
   push:
     branches: [ main ]
     paths:
-      - java/**
-      - gradle/**
+      - node/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -14,18 +13,14 @@ jobs:
     strategy:
       matrix:
         include:
-          - version: 8
-          - version: 11
-          - version: 17
+          - version: 14
           - version: 18
-          - version: 19
           - version: 20
-          - version: 21
     steps:
     - uses: actions/checkout@v2
     - name: check java build still works
       run: |
-        curl -X POST 'https://api.github.com/repos/Solipath/Java-Gradle-Solipath-Example/actions/workflows/_build.yml/dispatches' \
+        curl -X POST 'https://api.github.com/repos/Solipath/Node-Solipath-Example/actions/workflows/_build.yml/dispatches' \
         -H 'Accept: application/vnd.github.everest-preview+json' \
         -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
         -d '{"ref":"${{matrix.version}}"}'

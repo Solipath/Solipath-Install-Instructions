@@ -14,7 +14,12 @@ jobs:
     strategy:
       matrix:
         include:
+          - version: 8
+          - version: 11
           - version: 17
+          - version: 18
+          - version: 19
+          - version: 20
           - version: 21
     steps:
     - uses: actions/checkout@v2

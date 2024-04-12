@@ -2,8 +2,8 @@ name: Check Node Builds Work
 on:
   push:
     branches: [ main ]
-   # paths:
-   #   - node/**
+    paths:
+      - node/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

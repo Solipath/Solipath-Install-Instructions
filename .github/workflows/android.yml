@@ -2,8 +2,8 @@ name: Check Android Builds Work
 on:
   push:
     branches: [ main ]
-   # paths:
-   #   - android-sdk/**
+    paths:
+      - android-sdk/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
           - version: main
     steps:
     - uses: actions/checkout@v2
-    - name: check java build still works
+    - name: check android build still works
       run: |
         curl -X POST 'https://api.github.com/repos/Solipath/Android-Solipath-Example/actions/workflows/_build.yml/dispatches' \
         -H 'Accept: application/vnd.github.everest-preview+json' \

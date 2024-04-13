@@ -2,8 +2,8 @@ name: Check Go Builds Work
 on:
   push:
     branches: [ main ]
- #   paths:
- #     - go/**
+    paths:
+      - go/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

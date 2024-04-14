@@ -1,4 +1,4 @@
-name: Check Go Builds Work
+name: Check DotNet Builds Work
 on:
   push:
     branches: [ main ]

@@ -1,8 +1,1 @@
-{
-    "templates": [
-        {"name": "template1", "variables": {
-            "pythonVersion": "3.10",
-            "pypyVersion": "7.3.13"
-        }}
-    ]
-}
+{"templates":[{"name":"template1","variables":{"pythonVersion":"3.10","pypyVersion":"7.3.15"}}]}

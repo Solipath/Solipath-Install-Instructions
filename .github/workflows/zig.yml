@@ -2,8 +2,8 @@ name: Check Zig Builds Work
 on:
   push:
     branches: [ main ]
-    #paths:
-    #  - zig/**
+    paths:
+      - zig/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

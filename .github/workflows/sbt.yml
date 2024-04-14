@@ -2,8 +2,8 @@ name: Check SBT Builds Work
 on:
   push:
     branches: [ main ]
-    #paths:
-    #  - sbt/**
+    paths:
+      - sbt/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

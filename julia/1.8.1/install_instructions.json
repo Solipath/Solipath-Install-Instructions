@@ -1,8 +1,0 @@
-{
-    "templates": [
-        {"name": "template1", "variables": {
-            "version": "1.8.1",
-            "shortVersion": "1.8"
-        }}
-    ]
-}

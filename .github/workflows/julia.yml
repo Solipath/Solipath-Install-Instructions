@@ -2,8 +2,8 @@ name: Check Julia Builds Work
 on:
   push:
     branches: [ main ]
-    #paths:
-    #  - julia/**
+    paths:
+      - julia/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

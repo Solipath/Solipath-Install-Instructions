@@ -2,9 +2,9 @@ name: Check Pypy Builds Work
 on:
   push:
     branches: [ main ]
-    #paths:
-    #  - pypy/**
-    #  - poetry/**
+    paths:
+      - pypy/**
+      - poetry/**
   pull_request:
     branches: [ main ]
   workflow_dispatch:

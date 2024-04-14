@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: check go build still works
       run: |
-        curl -X POST 'https://api.github.com/repos/Solipath/DotNet-Solipath-Example/actions/workflows/_build.yml/dispatches' \
+        curl -X POST 'https://api.github.com/repos/Solipath/DotNet-CSharp-Solipath-Example/actions/workflows/_build.yml/dispatches' \
         -H 'Accept: application/vnd.github.everest-preview+json' \
         -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
         -d '{"ref":"${{matrix.version}}"}'

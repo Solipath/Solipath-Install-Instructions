@@ -1,0 +1,27 @@
+name: Check Pypy Builds Work
+on:
+  push:
+    branches: [ main ]
+    #paths:
+    #  - pypy/**
+    #  - poetry/**
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - version: "3.8"
+          - version: "3.9"
+          - version: "3.10"
+    steps:
+    - uses: actions/checkout@v2
+    - name: check go build still works
+      run: |
+        curl -X POST 'https://api.github.com/repos/Solipath/Python-Poetry-Solipath-Example/actions/workflows/_build.yml/dispatches' \
+        -H 'Accept: application/vnd.github.everest-preview+json' \
+        -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
+        -d '{"ref":"${{matrix.version}}"}'

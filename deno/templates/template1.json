@@ -1,0 +1,32 @@
+{
+	"downloads": [
+		{
+			"url": "https://github.com/denoland/deno/releases/download/v${version}/deno-x86_64-unknown-linux-gnu.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://github.com/denoland/deno/releases/download/v${version}/deno-x86_64-pc-windows-msvc.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://github.com/denoland/deno/releases/download/v${version}/deno-x86_64-apple-darwin.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://github.com/denoland/deno/releases/download/v${version}/deno-aarch64-apple-darwin.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://github.com/denoland/deno/releases/download/v${version}/deno-aarch64-unknown-linux-gnu.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}"}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"downloads": [
+		{
+			"url": "https://github.com/oven-sh/bun/releases/download/bun-v${version}/bun-linux-x64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://github.com/oven-sh/bun/releases/download/bun-v${version}/bun-windows-x64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+    	},
+		{
+			"url": "https://github.com/oven-sh/bun/releases/download/bun-v${version}/bun-darwin-x64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://github.com/oven-sh/bun/releases/download/bun-v${version}/bun-darwin-aarch64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://github.com/oven-sh/bun/releases/download/bun-v${version}/bun-linux-aarch64.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/bun-linux-x64", "platform_filters": [{"os": "linux", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${version}/bun-linux-aarch64", "platform_filters": [{"os": "linux", "arch": "aarch64"}]},
+		{"name": "PATH", "relative_path": "${version}/bun-windows-x64", "platform_filters": [{"os": "windows", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${version}/bun-darwin-x64", "platform_filters": [{"os": "macos", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${version}/bun-darwin-aarch64", "platform_filters": [{"os": "macos", "arch": "aarch64"}]}
+	]
+}

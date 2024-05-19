@@ -31,6 +31,6 @@
 		{"name": "PATH", "relative_path": "${version}/idea-IU-${buildNumber}/bin", "platform_filters": [{"os": "linux"}]},
 		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]},
 		{"name": "PATH", "relative_path": "${version}/ideaIU-${version}.bin/Contents/MacOS", "platform_filters": [{"os": "macos", "arch": "x86_64"}]},
-		{"name": "PATH", "relative_path": "${version}/ideaIU-${version}-aarch64.bin/Contents/MacOS", "platform_filters": [{"os": "macos", "arch": "aarch64"}]},
+		{"name": "PATH", "relative_path": "${version}/ideaIU-${version}-aarch64.bin/Contents/MacOS", "platform_filters": [{"os": "macos", "arch": "aarch64"}]}
 	]
 }

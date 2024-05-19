@@ -3,21 +3,34 @@
 		{
 			"url": "https://download.jetbrains.com/idea/ideaIU-${version}.tar.gz",
 			"destination_directory": "${version}",
-			"platform_filters": [{"os": "linux", "arch": "x86_64"},{"os": "macos", "arch": "x86_64"}]
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIU-${version}.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
 		},
 		{
 			"url": "https://download.jetbrains.com/idea/ideaIU-${version}-aarch64.tar.gz",
 			"destination_directory": "${version}",
-			"platform_filters": [{"os": "linux", "arch": "aarch64"},{"os": "macos", "arch": "aarch64"}]
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
 		},
 		{
-						"url": "https://download.jetbrains.com/idea/ideaIU-${version}.win.zip",
+			
+			"url": "https://download.jetbrains.com/idea/ideaIU-${version}-aarch64.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIU-${version}.win.zip",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
-        }
+        	}
 	],
 	"environment_variables": [
-		{"name": "PATH", "relative_path": "${version}/idea-IU-${buildNumber}/bin", "platform_filters": [{"os": "linux"},{"os": "macos"}]},
-		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]}
+		{"name": "PATH", "relative_path": "${version}/idea-IU-${buildNumber}/bin", "platform_filters": [{"os": "linux"}]},
+		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/ideaIU-${version}.bin/Contents/MacOS", "platform_filters": [{"os": "macos", "arch": "x86_64"}]},
+		{"name": "PATH", "relative_path": "${version}/ideaIU-${version}-aarch64.bin/Contents/MacOS", "platform_filters": [{"os": "macos", "arch": "aarch64"}]},
 	]
 }

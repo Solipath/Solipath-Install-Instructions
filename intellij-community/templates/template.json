@@ -3,16 +3,33 @@
 		{
 			"url": "https://download.jetbrains.com/idea/ideaIC-${version}.tar.gz",
 			"destination_directory": "${version}",
-			"platform_filters": [{"os": "linux"},{"os": "macos"}]
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
 		},
 		{
-						"url": "https://download.jetbrains.com/idea/ideaIC-${version}.win.zip",
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}-aarch64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}-aarch64.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/idea/ideaIC-${version}.win.zip",
 			"destination_directory": "${version}",
 			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
-        }
+        	}
 	],
 	"environment_variables": [
-		{"name": "PATH", "relative_path": "${version}/idea-IC-${buildNumber}/bin", "platform_filters": [{"os": "linux"},{"os": "macos"}]},
-		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]}
+		{"name": "PATH", "relative_path": "${version}/idea-IC-${buildNumber}/bin", "platform_filters": [{"os": "linux"}]},
+		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/IntelliJ IDEA CE.app/Contents/MacOS", "platform_filters": [{"os": "macos"}]}
 	]
 }

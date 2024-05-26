@@ -1,0 +1,11 @@
+{
+	"downloads": [
+		{
+			"url": "https://dlcdn.apache.org/maven/maven-${majorVersion}/${version}/binaries/apache-maven-${version}-bin.tar.gz",
+			"destination_directory": "${version}"
+		}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/apache-maven-${version}/bin"}
+	]
+}

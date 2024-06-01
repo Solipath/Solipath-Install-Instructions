@@ -1,0 +1,28 @@
+{
+	"downloads": [
+		{
+			"url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${version}/android-studio-${version}-linux.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux"}]
+		},
+		{
+			"url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${version}/android-studio-${version}-mac.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${version}/android-studio-${version}-mac_arm.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/${version}/android-studio-${version}-windows.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        	}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/android-studio/bin", "platform_filters": [{"os": "linux"},{"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/Android Studio.app/Contents/MacOS", "platform_filters": [{"os": "macos"}]}
+	]
+}

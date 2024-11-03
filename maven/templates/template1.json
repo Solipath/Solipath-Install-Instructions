@@ -1,7 +1,7 @@
 {
 	"downloads": [
 		{
-			"url": "https://dlcdn.apache.org/maven/maven-${majorVersion}/${version}/binaries/apache-maven-${version}-bin.tar.gz",
+			"url": "https://archive.apache.org/dist/maven/maven-${majorVersion}/${version}/binaries/apache-maven-${version}-bin.tar.gz",
 			"destination_directory": "${version}"
 		}
 	],

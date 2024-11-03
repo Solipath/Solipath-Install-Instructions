@@ -1,0 +1,25 @@
+name: Check Deno Builds Work
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - .github/workflows/deno.yml
+      - deno/**
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - version: "2.0"
+    steps:
+    - uses: actions/checkout@v4
+    - name: check deno build still works
+      run: |
+        curl -X POST 'https://api.github.com/repos/Solipath/Deno-Solipath-Example/actions/workflows/_build.yml/dispatches' \
+        -H 'Accept: application/vnd.github.everest-preview+json' \
+        -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
+        -d '{"ref":"${{matrix.version}}"}'

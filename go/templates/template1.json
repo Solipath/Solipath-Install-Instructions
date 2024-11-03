@@ -27,6 +27,7 @@
 		}
 	],
 	"environment_variables": [
-		{"name": "PATH", "relative_path": "${version}/go/bin"}
-	]
+		{"name": "PATH", "relative_path": "${version}/go/bin"},		
+		{"name": "PATH", "value": "~/go/bin"}
+		]
 }

@@ -19,9 +19,9 @@ jobs:
           - version: "3.10"
     steps:
     - uses: actions/checkout@v2
-    - name: check go build still works
+    - name: check pypy build still works
       run: |
-        curl -X POST 'https://api.github.com/repos/Solipath/Python-Poetry-Solipath-Example/actions/workflows/_build.yml/dispatches' \
+        curl -X POST 'https://api.github.com/repos/Solipath/Pypy-Poetry-Solipath-Example/actions/workflows/_build.yml/dispatches' \
         -H 'Accept: application/vnd.github.everest-preview+json' \
         -H 'Authorization: Bearer ${{ secrets.GITHUBREPOSECRET }}' \
         -d '{"ref":"${{matrix.version}}"}'

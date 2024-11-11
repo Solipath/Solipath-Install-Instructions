@@ -1,0 +1,35 @@
+{
+	"downloads": [
+		{
+			"url": "https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/python/pycharm-community-${version}.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/python/pycharm-community-${version}-aarch64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			
+			"url": "https://download.jetbrains.com/python/pycharm-community-${version}-aarch64.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/python/pycharm-community-${version}.win.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        	}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/pycharm-${buildNumber}/bin", "platform_filters": [{"os": "linux"}]},
+		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/PyCharm.app/Contents/MacOS", "platform_filters": [{"os": "macos"}]}
+	]
+}

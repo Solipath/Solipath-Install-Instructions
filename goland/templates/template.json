@@ -1,0 +1,35 @@
+{
+	"downloads": [
+		{
+			"url": "https://download.jetbrains.com/go/goland-${version}.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/go/goland-${version}.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "x86_64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/go/goland-${version}-aarch64.tar.gz",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "linux", "arch": "aarch64"}]
+		},
+		{
+			
+			"url": "https://download.jetbrains.com/go/goland-${version}-aarch64.dmg",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "macos", "arch": "aarch64"}]
+		},
+		{
+			"url": "https://download.jetbrains.com/go/goland-${version}.win.zip",
+			"destination_directory": "${version}",
+			"platform_filters": [{"os": "windows", "arch": "x86_64"}]
+        	}
+	],
+	"environment_variables": [
+		{"name": "PATH", "relative_path": "${version}/GoLand-${buildNumber}/bin", "platform_filters": [{"os": "linux"}]},
+		{"name": "PATH", "relative_path": "${version}/bin", "platform_filters": [{"os": "windows"}]},
+		{"name": "PATH", "relative_path": "${version}/GoLand.app/Contents/MacOS", "platform_filters": [{"os": "macos"}]}
+	]
+}

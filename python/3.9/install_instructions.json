@@ -1,1 +1,1 @@
-{"templates":[{"name":"template1","variables":{"version":"3.9.20","windows-x86_64":"8205438_1","linux-x86_64":"e870216_1","linux-aarch64":"4bb2201_1","mac-x86_64":"ce00570_1","mac-aarch64":"b885b13_1"}}]}
+{"templates":[{"name":"template1","variables":{"shortVersion":"3.9","longVersion":"3.9.23","astralVersion":"20250626"}}]}

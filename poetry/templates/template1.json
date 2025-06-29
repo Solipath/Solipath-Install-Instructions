@@ -10,7 +10,7 @@
 			"platform_filters": [{"os": "linux"}, {"os": "macos"}]
         },
 		{
-        	"command": "mkdir ${version} && cd ${version} && python -m venv python && cd python/Scripts && pip.exe install poetry && mkdir poetryFolder && cp poetry poetryFolder",
+        	"command": "mkdir ${version} && cd ${version} && python -m venv python && cd python/Scripts && pip.exe install poetry && mkdir poetryFolder && copy poetry.exe poetryFolder",
         	"when_to_run_rules": {"file_does_not_exist": "${version}"},
 			"platform_filters": [{"os": "windows"}]
         }

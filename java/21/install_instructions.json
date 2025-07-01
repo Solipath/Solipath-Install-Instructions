@@ -1,1 +1,1 @@
-{"templates":[{"name":"template2","variables":{"version":"21.0.5+11","versionGrouping":"temurin21","innerFilePath":"jdk-21.0.5+11","urlVersion":"21.0.5_11","openJdk":"openjdk21","openJdkCaps":"OpenJDK21U"}}]}
+{"templates":[{"name":"template2","variables":{"version":"21.0.7+6","versionGrouping":"temurin21","innerFilePath":"jdk-21.0.7+6","urlVersion":"21.0.7_6","openJdk":"openjdk21","openJdkCaps":"OpenJDK21U"}}]}
